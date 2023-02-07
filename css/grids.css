@@ -54,7 +54,7 @@
 
 @media (min-width: 800px) {
     .wrapper {
-        grid-template-columns:  1fr 3.5fr;
+        grid-template-columns:  1fr 4fr;
         gap: 10px;
         grid-template-areas: 
             "-masthead   -masthead"
@@ -64,7 +64,7 @@
             "-footer       -footer";
     }
     .wrapper {
-        max-width: 950px;
+        max-width: 1000px;
         margin: auto;
     }
 }
@@ -85,7 +85,7 @@
 
 @media (min-width: 1300px) {
     .wrapper {
-        width: 82vw;
+        width: 88%;
         margin: auto;
     }
 }
