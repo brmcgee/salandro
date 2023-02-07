@@ -114,38 +114,61 @@
     <div class="connect-container">
       <div class="connect-heading">
             <div class="connect-content">
-              <div class="">
-                <img class="mx-auto d-block" src="assets/gallery/RedMack_Watermark_small (1).jpg" alt="BRM" style="width:330px;">   
-              </div> 
-              <h1>Connect with Salandros</h1> 
-              <p >Have questions? - We've got answers. Leave us your information and a brief description of the services needed and we would be happy to get back with you.</p>
-            </div>
+              <h1>Connect with Salandro's</h1> 
+              <p >Have questions? - We've got answers. Please give us a call today. (724) 668-2020 (Ph) (724) 834-6560 (Fax) or Leave us your information and a brief description of the services needed and we would be happy to get back with you.</p>
+            <div class="">
+              <img class="mx-auto d-block" src="assets/gallery/RedMack_Watermark_small (1).jpg" alt="BRM" style="width:330px;">   
+            </div> 
+          </div>
       </div>
       <div class="connect-form">
         <form name="htmlform" method="post" action="SRI_html_form_send.php">
-          <table cellpadding="3" style="border-collapse: collapse" bordercolor="#111111" cellspacing="3">
+            <div class="row mb-3 m-1">
+                <label for="name" class="col-sm-4 col-form-label">Name: </label>
+                <div class="col-sm-8">
+                  <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+            </div>
 
-            <label for="name">Name: </label>
-            <input  type="text" name="name" maxlength="50" size="50"><br>
+            <div class="row mb-3 m-1">
+              <label for="box_size" class="col-sm-4 col-form-label">Box-Size: </label>
+              <div class="col-sm-8">
+                <input type="text" name="box_size" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+            </div>
 
-            <label for="box_size">Box Size: </label>
-            <input  type="text" name="box_size" maxlength="50" size="50"><br>
+            <div class="row mb-3 m-1">
+              <label for="location" class="col-sm-4 col-form-label">Location: </label>
+              <div class="col-sm-8">
+                <input type="text" name="location" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+            </div>
 
-            <label for="location">Location:</label> 
-            <input  type="text" name="location" maxlength="50" size="50"><br>
+            <div class="row mb-3 m-1">
+              <label for="email" class="col-sm-4 col-form-label">Email: </label>
+              <div class="col-sm-8">
+                 <input type="email" name="email" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+            </div>
 
-            <label for="email">Email: </label> 
-            <input  type="text" name="email" maxlength="80" size="50"> <br>
+            <div class="row mb-3 m-1">
+              <label for="telephone" class="col-sm-4 col-form-label">Telephone: </label>
+              <div class="col-sm-8">
+                 <input type="text" name="telephone" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+            </div>
 
-            <label for="telephone">Phone</label>
-            <input  type="text" name="telephone" maxlength="30" size="50"> <br><br>
+            <div class="row mb-3 m-1">
+              <label for="comments" class="col-sm-4 col-form-label">Comments: </label>
+              <div class="col-sm-8">
+                 <textarea type="text-field" name="comments" class="form-control" id="formGroupExampleInput" rows="5"></textarea>
+              </div>
+            </div>
 
-            <label for="comments">Comments: </label>
-            <textarea  name="comments" maxlength="1000" cols="52" rows="6" size="50"></textarea> <br>
-
-            <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
-            <input type="reset" value=" Clear "> 
-          </table>  
+            <div class="col-12">
+              <input type="submit" value="Submit"class="btn btn-solid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+              <input type="reset" value="Clear" class="btn btn-solid bg-danger"> 
+            </div>
        </form>
       </div>
     </div>
