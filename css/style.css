@@ -56,7 +56,7 @@ html, body {
 body {
     /* prevent mobile scroll x  */
     position: relative;
-    background-color: #b8b5b5;
+    background-color: #d3d2d2;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -126,7 +126,9 @@ input {
 .color-primary {
     background-color: var(--bg-primary);
 }
-
+.bg-white {
+    color: #f7f5f5;
+}
 /* ==========  FONTS ========== */
 .text-roboto {
     font-family: "Roboto", Sans-serif;
@@ -1002,7 +1004,7 @@ input {
 /* =========== MAIN ============ */
 .main .main-content h1 {
     font-family: "Roboto", Sans-serif;
-    background-color: var(--bg-primary-dark);
+    background-color: var(--bg-primary-off);
     border-radius: 5px;
     color: var(--bg-primary-contrast);
     padding: 10px;
@@ -1018,7 +1020,7 @@ input {
 .main .main-content .main-content-info p {
     font-family: "Roboto", Sans-serif;
     font-size: 18px;
-    line-height: 38px;
+    line-height: 44px;
     text-align: justify;
     font-weight: 500;
     padding: 10px;
@@ -1039,9 +1041,6 @@ input {
     line-height: 36px;
 }
 
-.aside h3 {
-
-}
 @media (max-width: 600px) {
     .aside {
         width: 70%;
@@ -1099,6 +1098,7 @@ input {
  
 
  /* =============== AD ============ */
+
 .ad .ad-card .ad-title h2 {
     /* font-family: "Roboto", Sans-serif; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -1126,6 +1126,12 @@ input {
     padding: 32px 9px 40px 9px;
     text-align: center;
 }
+.ad .ad-card .contact-card .card-info i {
+    color: var(--bg-primary-dark);
+}
+.ad .ad-card .contact-card .card-info p {
+    padding-left: 60px;
+}
 .ad .ad-card .ad-title h2 span {
     font-size: 44px;
     font-weight: 500;
@@ -1141,10 +1147,15 @@ input {
     border: none;
     vertical-align: top;
     margin: 0 auto 0 auto;
+
 }
-.ad .ad-card .ad-img img {
-    box-shadow: 12px 12px 36px 8px rgba(163, 157, 157, 0.8);
-    border: 2px solid rgb(92, 92, 92);
+.ad .ad-card .card-img img {
+    padding-left: 30px;
+}
+@media (max-width: 600px) {
+    .ad {
+        width: 70%;
+    }
 }
 
 /* ============ AD END/ ========= */
