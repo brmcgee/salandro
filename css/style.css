@@ -8,15 +8,14 @@
     margin: 25px auto 25px auto;
     padding: 10px 8px auto 8px;
     border-radius: 0px;
-    background-color: var(--bg-mack);
+    background-color: rgb(235, 235, 235);
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
 }
 .aside {
     margin: 25px auto 25px auto;
     padding: 10px 8px 10px 8px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
     background-color: #fcfcfc;
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
@@ -25,7 +24,6 @@
 .sidebar {
     margin: 25px auto 25px auto;
     padding: 10px 8px 10px 8px;
-    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #fcfcfc;
     /* border: 1px solid rgb(31, 29, 29); */
@@ -35,7 +33,6 @@
     margin: 25px auto auto auto;
     padding: 10px 8px 10px 8px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     background-color: #fcfcfc;
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
@@ -60,7 +57,8 @@ body {
     /* prevent mobile scroll x  */
     position: relative;
     background-color: var(--bg-mack);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
 }
 
 
@@ -523,7 +521,7 @@ input {
 .masthead {
     color: #fff;
     height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center right;
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 30px 0;
@@ -532,7 +530,7 @@ input {
 /* dimmer  */
 .masthead:before {
     content: "";
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     inset: 0;
 }
@@ -558,7 +556,7 @@ input {
     left: 0px;
     right: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -583,7 +581,7 @@ input {
     font-family: "Roboto", Sans-serif;
 }
 .masthead .masthead-container h3 {
-    margin: 0px 0px 22px 0px;
+    margin: 0px 0px 2px 0px;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -916,9 +914,10 @@ input {
 
   
 /* ======= FOOTER  ===== */
+
 .footer {
     color: #fff;
-    height: auto;
+    height: auto;  /* footer background  */
     background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center;
     background-size: cover;
     font-size: 14px;
@@ -1027,7 +1026,6 @@ input {
 .main .main-content h1 {
     font-family: "Roboto", Sans-serif;
     background-color: var(--bg-primary-off);
-    border-radius: 5px;
     color: var(--bg-primary-contrast);
     padding: 10px;
     margin: 20px auto 20px auto;
@@ -1066,7 +1064,7 @@ input {
     line-height: 44px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .aside {
         width: 70%;
     }
@@ -1126,22 +1124,31 @@ input {
 
  .ad {
     color: #fff;
-    height: auto;
+    height: auto;  /* footer background  */
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/sal-roff-logo.jpg") left;
     background-size: cover;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/salandro.ico") bottom;
-    background-repeat: no-repeat;
+    font-size: 14px;
+    padding: 20px 0 40px 0;
     position: relative;
 }
 /* dimmer  */
 .ad:before {
     content: "";
-    background: rgba(133, 130, 130, 0.3);
+    background: rgba(133, 130, 130, 0.7);
     position: absolute;
     inset: 0;
-    
+}
+.ad .ad-card .ad-content {
+    position: relative;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 8;
 }
  .ad .ad-card {
-    text-align: center;
+    text-align: right;
+    padding-right: 5px;
  }
  .ad .ad-card .contact-card .card-info h3 {
     color: var(--bg-primary-dark);
@@ -1154,6 +1161,9 @@ input {
 }
 .ad .ad-card .contact-card .card-info p {
     line-height: 26px;
+    font-weight: 600;
+    padding-top: 6px;
+    color: #333;
 }
 .ad .ad-card .card-img {
     border: none;
@@ -1164,6 +1174,7 @@ input {
 .ad .ad-card .card-img img {
     height: 40px;
     width: 140px;
+    margin-top: 100px;
 }
 @media (max-width: 600px) {
     .ad {
