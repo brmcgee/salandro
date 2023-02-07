@@ -12,6 +12,7 @@
 .aside {
     grid-area: -aside;
     height: 100%;
+    width: 100%;
     /* background-color: rgba(199, 193, 16, 0.7); */
 }
 .topbar {
@@ -29,6 +30,7 @@
 .ad {
     grid-area: -ad;
     height: 100%;
+    width: 100%;
     /* background-color: rgba(199, 16, 16, 0.7); */
 }
 .footer {
@@ -64,7 +66,7 @@
             "-footer       -footer";
     }
     .wrapper {
-        max-width: 1000px;
+        max-width: 1200px;
         margin: auto;
     }
 }
@@ -85,7 +87,7 @@
 
 @media (min-width: 1300px) {
     .wrapper {
-        width: 88%;
+        width: 100%;
         margin: auto;
     }
 }
