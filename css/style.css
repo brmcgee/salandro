@@ -8,8 +8,8 @@
     margin: 25px auto 25px auto;
     padding: 10px 8px 10px 8px;
     border-radius: 0px;
-    background-color: #fcfcfc;
-    border: 1px solid rgb(31, 29, 29);
+    background-color: var(--bg-mack);
+    /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
 }
 .aside {
@@ -17,7 +17,7 @@
     padding: 10px 8px 10px 8px;
     border-radius: 0px;
     background-color: #fcfcfc;
-    border: 1px solid rgb(31, 29, 29);
+    /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
 }
 
@@ -26,15 +26,15 @@
     padding: 10px 8px 10px 8px;
     border-radius: 0px;
     background-color: #fcfcfc;
-    border: 1px solid rgb(31, 29, 29);
-    box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
+    /* border: 1px solid rgb(31, 29, 29); */
+    box-shadow: 4px 8px 20px 1px rgb(112, 111, 111);
 }
 .ad {
     margin: 25px auto 25px auto;
     padding: 10px 8px 10px 8px;
     border-radius: 0px;
     background-color: #fcfcfc;
-    border: 1px solid rgb(31, 29, 29);
+    /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
 }
 .topbar {
@@ -42,7 +42,7 @@
     padding: 10px 8px 10px 8px;
     border-radius: 0px;
     background-color: #fcfcfc;
-    border: 1px solid rgb(31, 29, 29);
+    /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
 }
 .masthead {
@@ -56,7 +56,8 @@ html, body {
 body {
     /* prevent mobile scroll x  */
     position: relative;
-    background-color: #333;
+    background-color: #b8b5b5;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -518,7 +519,7 @@ input {
 }
 .masthead .masthead-container .block-text {
     width: 100%;
-    height: 58px;
+    height: 68px;
     background-color: var(--bg-primary);
     position: absolute;
     top: 62vh;
@@ -579,42 +580,79 @@ input {
 }
 @media (min-width: 125px) {
     .masthead {
-        height:48vh;
+        height: 60vh;
 
     }
     .masthead .masthead-container .block-text {
-        top: 46vh;
+        top: 58vh;
     }
     .masthead .masthead-container h1 {
-        margin: 0px 0px 6px 0px;
-        font-size: 28px;
+        margin: 0px 0px 10px 0px;
+        font-size: 46px;
         font-weight: bold;
-        line-height: 42px;
+        line-height: 52px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
     }
     .masthead .masthead-container h2 {
-        font-size: 16px;
-        line-height: 20px;
-        font-style: italic;
+        font-size: 18px;
+        line-height: 26px;
         text-transform: uppercase;
     }
     .masthead .masthead-container h3 {
-        margin: 0px 0px 8px 0px;
-        font-size: 16px;
-        line-height: 20px;
+        margin: 0px 0px 22px 0px;
+        font-size: 22px;
+        line-height: 28px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         font-family: "Roboto", Sans-serif;
-        font-style: italic;
         padding-top: 10px;
     }
     .masthead .masthead-container .block-text p {
         font-size: 32px;
     }
 }
-
+@media (min-width: 990px) {
+    .masthead {
+        height: 68vh;
+    }
+    .masthead .masthead-container .block-text {
+        top: 65vh;
+    }
+    .masthead .masthead-container h1 {
+        margin: 0px 0px 20px 0px;
+        font-size: 54px;
+        font-weight: bold;
+        line-height: 50px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
+    .masthead .masthead-container h2 {
+        margin: 0px 0px 22px 0px;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 1.1px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    } 
+    .masthead .masthead-container h3 {
+        margin: 0px 0px 22px 0px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-family: "Roboto", Sans-serif;
+    }
+    .masthead .masthead-container .block-text p {
+        font-size: 32px;
+    }
+}
 /* ===== MASTHEAD END/==============*/
+
 
 
 /* ======= MINI-MASTHEAD  ========== */
@@ -970,7 +1008,9 @@ input {
     padding: 10px;
     margin: 20px auto 20px auto;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 500;
+    font-size: 28px;
     box-shadow: 4px 4px 28px 2px rgb(184, 184, 184);
     width: 100%;
 
@@ -979,13 +1019,35 @@ input {
     font-family: "Roboto", Sans-serif;
     font-size: 18px;
     line-height: 38px;
+    text-align: justify;
     font-weight: 500;
     padding: 10px;
     color: #000000;
+    text-indent: 1cm;
 }
  /* ======== MAIN END/ ========= */
   
+/* ========= ASIDE ============= */
+.aside .title h3 {
+    font-weight: 500;
+    font-style: italic;
+    padding: 3px;
+    margin-bottom: 20px;
+    text-indent: .5cm;
+}
+.aside .list li {
+    line-height: 36px;
+}
 
+.aside h3 {
+
+}
+@media (max-width: 600px) {
+    .aside {
+        width: 70%;
+    }
+}
+/* ========= ASIDE ============= */
 
 /* =========== SIDEBAR ============ */
 
@@ -1018,19 +1080,19 @@ input {
     text-shadow: 1px 1px 3px black;
 }
 .sidebar .sidebar-card .sidebar-info p {
-    /* background-color: aqua; */
-    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
-    letter-spacing: 1.03px;
     color: #2d2b2b;
     line-height: 42px;
     font-size: 20px;
-    font-weight: 700;
     padding: 32px 9px 40px 9px;
-    text-align: center;
+    text-align: justify;
+    text-indent: .5cm;
 }
 .sidebar .sidebar-card .sidebar-info .sidebar-img {
     margin-top: 28px;
     border: none;
+}
+.sidebar .sidebar-card  .sidebar-img img {
+    border-radius: 5px;
 }
  /* ======== SIDEBAR END/ ========= */
 
