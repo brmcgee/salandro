@@ -838,10 +838,12 @@ input {
 
 
 
+
 /* ======== SERVICES ======== */ 
 
 .services {
     font-family: var(--font-primary);
+    background-color: #fff;
 }
 .services .row .card .card-body {
     padding: 2px 0 1px 0;; 
@@ -850,7 +852,7 @@ input {
     color: var(--bg-primary);
     font-weight: bold;
     font-family: var(--font-primary);
-    margin: 0 0 4px 5px;
+    margin: 0px 0 4px 5px;
     padding-bottom: 0px;
     font-size: 28px;
     display: inline-block;
@@ -863,7 +865,7 @@ input {
 .services .section-header p {
     line-height: 24px;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding-left: 5px;
     font-family: var(--font-primary);
 }
@@ -886,14 +888,7 @@ input {
     cursor: pointer;
     transition: 0.3s;
 }
-.services .row div .card .card-body h5:hover  {
-    color: rgba(245, 245, 245, 0.9);
-    display: inline-block;
-    transition: 0.3s;
-  }
-.services .row div .card .card-body h5:active  {
-    box-shadow: 1px 1px gray;
-}
+
 .services .row div .card .card-body p  {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
@@ -907,6 +902,61 @@ input {
     border-radius: 5px;
     border: 1px solid rgb(161, 161, 161);
     box-shadow: 2px 3px 6px 2px rgb(197, 197, 197);
+}
+.listing {
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    
+}
+.listing-card {
+    border: 2px solid var(--bg-color-dark);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.listing .cta {
+    margin-top: auto;
+    border-top: 1px solid var(--bg-color-dark);
+    background-color: var(--bg-primary);
+    color: white;
+    padding: 10px;
+}
+.listing .cta a {
+    color: white;
+    text-decoration: none;
+}
+.listing .listing-card h2 {
+    padding: 2px;
+    text-transform: uppercase;
+    color: var(--bg-primary);
+    text-align: center;
+}
+.listing .body {
+    padding: 12px;
+}
+.listing .body p {
+    text-indent: .5cm;
+}
+.card-span{
+    background-color: var(--bg-icon);
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    margin-left: 10px;
+}
+ol, ul {
+    padding-left: 1px;
+    padding-inline-start: 0%;
+    list-style-type: square;
+}
+.content-roll-off {
+    padding: 0px;
 }
 /* ===== SERVICES END/ ===== */
 
@@ -1046,6 +1096,10 @@ input {
     color: #000000;
     text-indent: 1cm;
 }
+.main .main-img {
+    margin-top: 15px;
+    box-shadow: 3px 3px 10px #333;
+}
  /* ======== MAIN END/ ========= */
   
 /* ========= ASIDE ============= */
@@ -1109,7 +1163,7 @@ input {
     border: none;
 }
 .sidebar .sidebar-card  .sidebar-img img {
-    border-radius: 5px;
+    border-radius: 10px;
 }
  /* ======== SIDEBAR END/ ========= */
 
