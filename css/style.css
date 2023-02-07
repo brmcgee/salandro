@@ -56,7 +56,7 @@ html, body {
 body {
     /* prevent mobile scroll x  */
     position: relative;
-    background-color: #d3d2d2;
+    background-color: var(--bg-mack);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -758,7 +758,7 @@ input {
     .connect-content {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
     .connect-container .connect-heading h1 {
         text-align: left;
@@ -772,13 +772,18 @@ input {
         flex-direction: row;
         justify-content: center;
         margin: 0 auto 0 auto;
-        width: 50vw;
+        max-width: 400px;
     }
     .jotform-form {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         padding-left: 5px;
+    }
+}
+@media (min-width: 850px) {
+    .connect-container {
+        max-width: 880px;
     }
 }
 /* ===== CONNECT FORM END/ ========*/
@@ -1354,108 +1359,7 @@ input {
 
 
 
-/* ========= JOTFORM ===============  */
-div.form-header-group.header-default {
-    background-color: var(--bg-primary);
-}
-h2#header_14.form-header {
-    font-size: 20px;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #fff;
-}
-.form-all .form-textbox,
-.form-all .form-text {
-    -webkit-border-radius: 0px !important; 
-    -moz-border-radius: 0px !important;
-    border-radius: 0px !important;
-}
-/* ========= JOTFORM END/ ============  */
 
 
 
-/* ===== CONNECT FORM =============*/
-.connect-container {
-    box-sizing: border-box;
-    /* margin: 12px auto 20px auto; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-@media (min-width: 1100px) {
-    .connect-container {
-        max-width: 80vw;
-    }
-}
-.jotform-form .form-all {
-   margin: 0 auto 0 auto;
-}
-.connect-heading {
-    /* padding: 2px 10px 0px 10px; */
-    margin: 0 auto 0 auto;
-}
-.connect-form {
-    margin: 0 auto 0 auto;
-    text-align: center;
-}
-.connect-container .connect-heading img {
-   width: 200px; 
-   margin: 0px auto 0 auto;
-}
-.connect-container .connect-heading h1 {
-    color: var(--bg-primary);
-    text-align: center;
-    font-family: var(--font-primary);
-}
-.connect-container .connect-heading p {
-    text-align: center;
-    margin-right: 5px;
-}
-.connect-container .connect-heading .connect-content {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 890px) {
-    .connect-container {
-        flex-direction: row;
-    }
-    .connect-heading {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin: 0 auto 0 auto;
-
-    }
-
-    .connect-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .connect-container .connect-heading h1 {
-        text-align: left;
-        font-size: 40px;
-    }
-    .connect-container .connect-heading p {
-        text-align: left;
-    }
-    .connect-form {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 auto 0 auto;
-        /* width: 50vw; */
-    }
-    .jotform-form {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding-left: 5px;
-    }
-}
-
-/* ===== CONNECT FORM END/ ========*/
 

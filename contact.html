@@ -33,16 +33,16 @@
 
 <!-- ============ BANNER ============= -->
 <div class="banner" id="top">
-  <!-- <div class="banner-bar"></div> -->
   <div class="container-fluid row">
     <div class="col-sm" id="bannerImg1">
-      <img class="rounded mx-auto d-block" src="assets/logo/brm.jpg" style="width:210px" alt="BRM Contractors Inc">
+      <img class="rounded mx-auto d-block img-fluid" src="assets/logo/SRI_Logo_V1.jpg" style="max-height:180px;" alt="Home of Brian McGee">
     </div>
     <div class="col-sm" id="bannerImg2">
-      <img class="rounded mx-auto d-block" src="assets/logo/free-estimate.png" style="width:210px" alt="Free Estimate by BRM">
+      <img class="rounded mx-auto d-block" src="assets/gallery/RedMack_Watermark_small.jpg" style="max-width:290px" alt="Home of Brian McGee">
     </div>
   </div>
 </div>
+
 <!-- =========== BANNER END/ ========== -->
 
 <!-- ============ NAV-BAR ============= -->
@@ -101,40 +101,57 @@
 </div> 
 <!-- =========== NAV-BAR END/========== -->
 
-
 <!-- ============ WRAPPER ============= -->
-<!-- ============= CONTENT ============== --> 
 <div class="wrapper row">
   <!-- ========== MINI-MASTHEAD =========== -->
   <div class="mini-masthead">
     <div class="mini-container container">
-      <!-- <h3>Connect with Us</h3>
-      <h1>BRM Contractors Inc</h1>
-      <h2>Questions - We have answers .. Connect with BRM</h2> -->
+      <h3>Connect with Us</h3>
+      <h2>INNOVATIVE SOLUTIONS IN WASTE MANAGEMENT</h2>
     </div>
-</div>
+  </div>
 <!-- ======== MINI-MASTHEAD END/ ========= -->
-    <!-- ======== JOT FORM CONETENT ======== -->
     <div class="connect-container">
-        <div class="connect-heading">
+      <div class="connect-heading">
             <div class="connect-content">
-              <div class="img-box">
-                <img class="" src="assets/logo/free-estimate.png" alt="BRM" style="width:200px;">   
+              <div class="">
+                <img class="mx-auto d-block" src="assets/gallery/RedMack_Watermark_small (1).jpg" alt="BRM" style="width:330px;">   
               </div> 
-              <h1>Connect with BRM</h1> 
-              <p >Have questions? - We've got the answers. Leave us your information and a brief description of the services needed and we would be happy to get back with you.</p>
+              <h1>Connect with Salandros</h1> 
+              <p >Have questions? - We've got answers. Leave us your information and a brief description of the services needed and we would be happy to get back with you.</p>
             </div>
-        </div>
+      </div>
+      <div class="connect-form">
+        <form name="htmlform" method="post" action="SRI_html_form_send.php">
+          <table cellpadding="3" style="border-collapse: collapse" bordercolor="#111111" cellspacing="3">
 
+            <label for="name">Name: </label>
+            <input  type="text" name="name" maxlength="50" size="50"><br>
 
-        <div class="connect-form">
+            <label for="box_size">Box Size: </label>
+            <input  type="text" name="box_size" maxlength="50" size="50"><br>
 
-        </div>
+            <label for="location">Location:</label> 
+            <input  type="text" name="location" maxlength="50" size="50"><br>
+
+            <label for="email">Email: </label> 
+            <input  type="text" name="email" maxlength="80" size="50"> <br>
+
+            <label for="telephone">Phone</label>
+            <input  type="text" name="telephone" maxlength="30" size="50"> <br><br>
+
+            <label for="comments">Comments: </label>
+            <textarea  name="comments" maxlength="1000" cols="52" rows="6" size="50"></textarea> <br>
+
+            <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+            <input type="reset" value=" Clear "> 
+          </table>  
+       </form>
+      </div>
     </div>
-    <!-- ===== JOT FORM CONETENT END/ ====== -->
 </div>
-<!-- ========= CONTENT END// ============ -->
 <!-- =========== WRAPPER END/========== -->
+
 
 
 <!-- ============ FOOTER ============== -->
