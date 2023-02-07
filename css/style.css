@@ -6,7 +6,7 @@
 
 .main {
     margin: 25px auto 25px auto;
-    padding: 10px 8px 10px 8px;
+    padding: 10px 8px auto 8px;
     border-radius: 0px;
     background-color: var(--bg-mack);
     /* border: 1px solid rgb(31, 29, 29); */
@@ -15,7 +15,8 @@
 .aside {
     margin: 25px auto 25px auto;
     padding: 10px 8px 10px 8px;
-    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: #fcfcfc;
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
@@ -24,15 +25,17 @@
 .sidebar {
     margin: 25px auto 25px auto;
     padding: 10px 8px 10px 8px;
-    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: #fcfcfc;
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(112, 111, 111);
 }
 .ad {
-    margin: 25px auto 25px auto;
+    margin: 25px auto auto auto;
     padding: 10px 8px 10px 8px;
-    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: #fcfcfc;
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
@@ -84,6 +87,7 @@ body {
     --bg-vivid: #ff6900;
     --bg-color-dark: #333;
     --bg-mack: rgb(201, 201, 201);
+    --bg-danger: rgb(163, 30, 30);
     --bg-color-light: #abb8c3;
     --bg-color-black: #000000;
   
@@ -129,6 +133,7 @@ input {
 .bg-white {
     color: #f7f5f5;
 }
+
 /* ==========  FONTS ========== */
 .text-roboto {
     font-family: "Roboto", Sans-serif;
@@ -190,6 +195,18 @@ input {
     border: 3px solid var(--bg-primary-off);
     box-shadow: 1px 1px var(--bg-primary-dark);
     color: var(--bg-primary-contrast);
+}
+.bg-danger {
+    background-color: var(--bg-danger);
+    border-color: var(--bg-danger);
+}
+.bg-danger:hover {
+    background-color: var(--bg-danger);
+    border-color: var(--bg-danger);
+}
+.bg-danger:active {
+    background-color: var(--bg-danger);
+    border-color: var(--bg-danger);
 }
 
 
@@ -707,18 +724,17 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px;
 }
 @media (min-width: 1100px) {
     .connect-container {
-        max-width: 80vw;
+        max-width: 90%;
     }
 }
-.jotform-form .form-all {
-   margin: 0 auto 0 auto;
-}
+
 .connect-heading {
     margin: 0 auto 0 auto;
-    width: 70vw;
+    width: 70%;
 }
 .connect-form {
     width: 95vw;
@@ -733,6 +749,7 @@ input {
     color: var(--bg-primary);
     text-align: center;
     font-family: var(--font-primary);
+    border-bottom: 2px solid var(--bg-icon);
 }
 .connect-container .connect-heading p {
     text-align: center;
@@ -783,7 +800,7 @@ input {
 }
 @media (min-width: 850px) {
     .connect-container {
-        max-width: 880px;
+        max-width: 980px;
     }
 }
 /* ===== CONNECT FORM END/ ========*/
@@ -1036,14 +1053,17 @@ input {
   
 /* ========= ASIDE ============= */
 .aside .title h3 {
-    font-weight: 500;
+    font-weight: 700;
     font-style: italic;
     padding: 3px;
     margin-bottom: 20px;
     text-indent: .5cm;
+    line-height: 40px;
+    color: var(--bg-primary);
+
 }
 .aside .list li {
-    line-height: 36px;
+    line-height: 44px;
 }
 
 @media (max-width: 600px) {
@@ -1104,62 +1124,50 @@ input {
 
  /* =============== AD ============ */
 
-.ad .ad-card .ad-title h2 {
-    /* font-family: "Roboto", Sans-serif; */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
-    font-size: 42px;
+ .ad {
+    color: #fff;
+    height: auto;
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/salandro.ico") bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* dimmer  */
+.ad:before {
+    content: "";
+    background: rgba(133, 130, 130, 0.3);
+    position: absolute;
+    inset: 0;
+    
+}
+ .ad .ad-card {
+    text-align: center;
+ }
+ .ad .ad-card .contact-card .card-info h3 {
+    color: var(--bg-primary-dark);
     font-weight: bold;
-    line-height: 60px;
-    background-color: var(--bg-primary-off);
-    border-radius: 25px;
-    color: var(--bg-icon-hover);
-    box-shadow: 12px 12px 36px 8px rgba(126, 123, 123, 0.8);
-    border: 1px solid rgba(15, 14, 9, 1);
-    margin-top: 38px;
-    margin: 38px auto 48px auto;
-    padding: 28px 10px 30px 10px;
-    max-width: 320px;
-    text-align: center;
-    text-shadow: 1px 1px 3px var(--text-black);
 }
-.ad .ad-card .ad-info p {
-    font-family: var(--font-primary);
-    color: var(--text-black);
-    line-height: 32px;
-    font-size: 18px;
-    padding: 32px 9px 40px 9px;
-    text-align: center;
-}
-.ad .ad-card .contact-card .card-info i {
+.ad .ad-card .contact-card .card-info h3 i {
+    margin-right: 8px;
+    padding: 2px;
     color: var(--bg-primary-dark);
 }
 .ad .ad-card .contact-card .card-info p {
-    padding-left: 60px;
+    line-height: 26px;
 }
-.ad .ad-card .ad-title h2 span {
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 50px;
-    color: var(--bg-primary-contrast);
-    text-shadow: 2px 2px 6x var(--text-black);
-    text-transform: none;
-    letter-spacing: 1.3;
-}
-.ad .ad-card .ad-img {
-    padding-top: 2px;
-    width: 266px;
+.ad .ad-card .card-img {
     border: none;
     vertical-align: top;
     margin: 0 auto 0 auto;
 
 }
 .ad .ad-card .card-img img {
-    padding-left: 30px;
+    height: 40px;
+    width: 140px;
 }
 @media (max-width: 600px) {
     .ad {
-        width: 70%;
+        width: 100%;
     }
 }
 
