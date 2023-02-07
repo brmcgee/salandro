@@ -22,10 +22,10 @@
 }
 
 .sidebar {
-    margin: 25px auto 25px auto;
+    margin: 25px auto auto auto;
     padding: 10px 8px 10px 8px;
     border-bottom-right-radius: 10px;
-    background-color: #fcfcfc;
+    background-color: #818181;
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(112, 111, 111);
 }
@@ -918,7 +918,7 @@ input {
 .footer {
     color: #fff;
     height: auto;  /* footer background  */
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") left;
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 40px 0;
@@ -1066,44 +1066,40 @@ input {
 
 @media (max-width: 700px) {
     .aside {
-        width: 70%;
+        width: 100%;
     }
 }
 /* ========= ASIDE ============= */
 
 /* =========== SIDEBAR ============ */
-
-.sidebar .sidebar-card .sidebar-title h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 60px;
-    letter-spacing: 1.01px;
-    background-color: var(--bg-primary-off);
-    border-radius: 25px;
-    color: var(--bg-primary-contrast);
-    box-shadow: 3px 8px 22px 4px rgba(86, 17, 17, 0.3);
-    border: 1px solid black;
-    margin: 38px auto 48px auto;
-    padding: 28px 10px 20px 10px;
-    max-width: 320px;
-    text-align: center;
-    text-shadow: 1px 1px 3px black;
-    letter-spacing: 1.03px;
+.sidebar {
+    color: #fff;
+    height: auto;  /* payment background  */
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/roll-off-multi.jpg") bottom center;
+    background-size: cover;
+    font-size: 14px;
+    padding: 20px 0 40px 0;
+    position: relative;
 }
-.sidebar .sidebar-card .sidebar-title h2 span {
-    font-size: 42px;
-    font-weight: 600;
-    line-height: 48px;
-    letter-spacing: 1.3px;
-    font-style: italic;
-    color: var(--bg-icon-hover);
-    text-shadow: 1px 1px 3px black;
+/* dimmer  */
+.sidebar:before {
+    content: "";
+    background: rgba(133, 130, 130, 0.85);
+    position: absolute;
+    inset: 0;
+}
+.sidebar .sidebar-card .sidebar-content {
+    position: relative;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 18;
 }
 .sidebar .sidebar-card .sidebar-info p {
-    color: #2d2b2b;
-    line-height: 42px;
+    color: #0a0a0a;
+    font-weight: 700;
+    line-height: 48px;
     font-size: 20px;
     padding: 32px 9px 40px 9px;
     text-align: justify;
@@ -1124,8 +1120,8 @@ input {
 
  .ad {
     color: #fff;
-    height: auto;  /* footer background  */
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/sal-roff-logo.jpg") left;
+    height: auto;  /* payment background  */
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-payment.jpg") left;
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 40px 0;
@@ -1207,7 +1203,7 @@ input {
 @media (min-width: 875px) {
     .content-about {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.6fr 1fr;
     }  
 }
 .contact {

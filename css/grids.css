@@ -33,13 +33,13 @@
 }
 .footer {
     grid-area: -footer;
-    margin-top: 40px;
+    margin-top: 4px;
 }
 
 @media (min-width: 250px){
     .wrapper {
         display: grid;
-        gap: 25px;
+        gap: 1px;
         grid-template-areas: 
             "-masthead"
             "-main"
