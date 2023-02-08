@@ -74,11 +74,11 @@
             "-footer       -footer";
     }
     .wrapper {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: auto;
     }
     .aside {
-        width: 95%;
+        width: 96%;
         margin: 0px auto auto auto;
         padding: 2px;
         background-color: var(--bg-light);
