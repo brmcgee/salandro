@@ -37,6 +37,7 @@
     border: none;
 }
 
+
 @media (min-width: 250px){
     .wrapper {
         display: grid;
