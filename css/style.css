@@ -526,7 +526,7 @@ input {
 .masthead {
     color: #fff;
     height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") right;
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 30px 0;
