@@ -1378,10 +1378,23 @@ ol, ul {
     padding-left: 5px;
 }
 
-
-
 /* ====== MAINTENANCE END/ ============= */
 
+/* ========= ENVIROMENTAL =============== */
+.enviromental .container .heading h1 {
+    color: var(--bg-primary);
+    border-bottom: 2px solid var(--bg-icon);
+}
+.enviromental .container .title h4 {
+    text-indent: .5cm;
+}
+.enviromental .container .content ul {
+    padding-left: 38px;
+}
+.enviromental .container .content ul li {
+    padding: 5px;
+}
+/* ====== ENVIROMENTAL END/ ============= */
 
 /* =========== MODAL ============= */
 .modal .modal-content {

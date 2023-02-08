@@ -51,6 +51,19 @@
             "-ad"
             "-footer";
     }
+    .aside {
+        width: 70%;
+        margin: 55px auto auto auto;
+        padding: 4px;
+        background-color: var(--bg-icon);
+        border: 3px solid var(--bg-primary-dark);
+        color: #333;
+        font-family: 'Special Elite', cursive;
+        font-weight: bold;
+    }
+    .aside li {
+        margin-left: 25px;
+    }
 }
 
 
@@ -69,12 +82,30 @@
         max-width: 1200px;
         margin: auto;
     }
+    .aside {
+        width: 100%;
+        margin: 25px auto auto auto;
+        padding: 2px;
+        background-color: var(--bg-light);
+        border: 3px solid var(--bg-primary-dark);
+        color: #333;
+        font-family: 'Special Elite', cursive;
+        font-weight: bold;
+        border: 0;
+
+    }
+    .aside li {
+        margin-left: 15px;
+    }
+    .aside .aside-content .title h3 {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 1100px) {
     .wrapper {
         gap: 10px;
-        grid-template-columns:  2fr 5fr;
+        grid-template-columns:  1.8fr 5fr;
         grid-template-areas: 
         "-masthead   -masthead"
         "-aside         -main"
