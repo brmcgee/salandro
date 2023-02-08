@@ -11,6 +11,7 @@
 <title>Services - Salandro's Refuse Inc.</title>
 <link rel="icon" href="assets/logo/salandro.ico" sizes="32x32" />
 
+
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
@@ -25,7 +26,7 @@
 
 <!-- local style sheet by brm  -->
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<!-- <link rel="stylesheet" href="css/grids.css" type="text/css"> page specific -->
+<link rel="stylesheet" href="css/services-grid.css" type="text/css"> 
 </style>
 
 </head>
@@ -38,7 +39,7 @@
         <img class="rounded mx-auto d-block img-fluid" src="assets/logo/SRI_Logo_V1.jpg" style="max-height:180px;" alt="Home of Brian McGee">
       </div>
       <div class="col-sm" id="bannerImg2">
-        <img class="rounded mx-auto d-block" src="assets/gallery/RedMack_Watermark_small.jpg" style="max-width:290px" alt="Home of Brian McGee">
+        <img class="rounded mx-auto d-block" src="assets/gallery/no-bg-compactor-sunflower.jpg" style="max-width:290px" alt="Home of Brian McGee">
       </div>
     </div>
   </div>
@@ -47,68 +48,67 @@
 
 <!-- ============ NAV-BAR ============= -->
 <div class="nav-bar col-12" id="navBar">
-   <!-- =========  NAVBAR ==========  -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-main">
-    <a class="navbar-brand" href="#">
-      <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
-    </a>
-    <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="menu-icon" onclick="iconSwap(this)">
-        <div class="menu-icon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </span>
-    </a>
+  <!-- =========  NAVBAR ==========  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-main">
+   <a class="navbar-brand" href="#">
+     <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
+   </a>
+   <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="menu-icon" onclick="iconSwap(this)">
+       <div class="menu-icon">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+       </div>
+     </span>
+   </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-        </li>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+       </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="about.html">About Us</a>
-            <a class="dropdown-item" href="http://www.salandros.com">Salandros Refuse</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Services
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="roll-off.html">Roll-Off</a>
-            <a class="dropdown-item" href="compactor.html">Compactor</a>
-            <a class="dropdown-item" href="#recycling.html">Recycling</a>
-            <a class="dropdown-item" href="#enviromental.html">Enviromental</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <button type="button" class="btn btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Connect</button>
-            </a>
-          </div>
-        </li>
-                <li class="nav-item">
-          <a class="nav-link" id="lastNav" href="contact.html">Contact Us</a>
-        </li>
-    </div>
-  </nav>
-  <!-- =========  NAVBAR/END =========  -->
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           About
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="about.html">About Us</a>
+           <a class="dropdown-item" href="http://www.salandros.com">Salandros Refuse</a>
+         </div>
+       </li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Services
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="roll-off.html">Roll-Off</a>
+           <a class="dropdown-item" href="compactor.html">Compactor</a>
+           <a class="dropdown-item" href="recycling.html">Recycling</a>
+           <a class="dropdown-item" href="enviromental.html">Enviromental</a>
+           <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">
+             <button type="button" class="btn btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Connect</button>
+           </a>
+         </div>
+       </li>
+               <li class="nav-item">
+         <a class="nav-link" id="lastNav" href="contact.html">Contact Us</a>
+       </li>
+   </div>
+ </nav>
+ <!-- =========  NAVBAR/END =========  -->
 </div> 
 <!-- =========== NAV-BAR END/========== -->
 
   <!-- ========== MINI-MASTHEAD =========== -->
-  <div class="mini-masthead">
+  <!-- <div class="mini-masthead">
     <div class="mini-container container col-sm-10">
-      <!-- <h3>BRM Contractors Inc</h3> -->
-      <h3>Services with BRM Contractors</h3>
-      <h2>'We are at your service'</h2>
+      <h3>Salandros Refuse Inc</h3>
+      <h3>Roll-Off Service</h3>
     </div>
-</div>
+  </div> -->
 <!-- ======== MINI-MASTHEAD END/ ========= -->
 
 
@@ -117,166 +117,148 @@
   
   <!-- ========= SERVICES ================ -->
   <section class="services" id="services">
-   <div class="container">
+   <div class="container-fluid">
 
-    <div class="section-header">
-      <h2 class="display-6">Services</h2>
-      <p>BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.</p>
-    </div>
     <!-- CARD ROWS  -->
-    <div class="row gy-4">
+    <div class="container-fluid">
+      <div class="content-roll-off" >  
+        <h2>Services by Salandro's Refuse</h2> 
+        <h4>Salandro's offers Residential and Commercial Dumpster Rentals</h4>   
+        <p>We offer all sizes, from small driveway dumpsters for smaller jobs, to large roll-off boxes for the really big jobs.  Next-day service is available. Same-day service is also possible in certain areas.  Call today for pricing.</p>
+        <p>*delivery is not provided on Saturdays or Sundays</p>   
 
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Custom decks</h5>
-              <img style="height:250px;" src="assets/gallery/custom-deck.jpg" class="card-img-top" alt="Wood repairs of all sorts">
-              <div class="card-body">
-              <p class="card-text">BRM builds and repairs all sorts of deck, handrail, posts and fences and more. Full service deck builds and fence installs. We repair and install anything wood.</p>
-            </div>
-            </div>
-          </div>
-        </div>
+        <ul class="listing">
+            <li class="listing-card container-fluid">
+                <img class="img-fluid" style="height: 200px;" src="assets/gallery/roll-off-30-blue.jpg" alt="10 yard small dumpster">
+                <h2>Roll-Off Service</h2>
+                <div class="body">
+                    <p>Attic clean outs, large garage clean up and kitchen remodeling. Can hold 10-12 sqare of roofing. Delivery not avail on Saturday or Sunday</p>
+                </div>
+                <div class="cta">
+                    <a class="btn btn-solid" href="roll-off.html">Roll-Off Service</a>
+                </div>
+            </li>
 
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="bathroom">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Bathrooms</h5>
-              <img style="height:250px;"  src="assets/gallery/bathroom1.jpg" class="card-img-top" alt="Bathroom remodeling">
-              <div class="card-body">
-              <p class="card-text">We repair all things bathroom! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full bathroom remodel</p>
-            </div>
-          </div>
-        </div>
-      </div>
+            <li class="listing-card">
+                <img class="img-fluid" style="height: 200px; "src="assets/gallery/compactor-sunflower.jpg" alt="15 yard small dumpster" style="width:100%">
+                <h2>Compactor Service</h2>
+                <div class="body">
+                    <p>This size is great for estate clean-ups or large garage clean-ups. Perfect for kitchen remodel too. Also can hold 15-16 sqare of roofing.</p><p>
+                </div>
+                <div class="cta">
+                    <a class="btn btn-solid" href="roll-off.html">Compactor Service</a>
+                </div>
+            </li>
 
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="painting">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Painting</h5>
-              <img style="height:250px;"  src="assets/gallery/drywall1.jpg" class="card-img-top" alt="Painting and Sealing">
-              <div class="card-body">
-              <p class="card-text">We offer full service drywall patching and painting. Interior or exterior paint, stain, caulk or sealing available. Drywall and painting to complete install.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="kitchen">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Kitchens</h5>
-              <img style="height:250px;"  src="assets/gallery/kitchen.png" class="card-img-top" alt="Kitchen remodeling">
-              <div class="card-body">
-              <p class="card-text">We repair all things kitchen! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full kitchen remodel and appliance installation.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-        
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="handyman">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Handyman</h5>
-              <img style="height:250px;"  src="assets/gallery/siding-lift.png" class="card-img-top" alt="Handyman services">
-              <div class="card-body">
-              <p class="card-text">Need something fixed or repaired, maybe even hung on a wall? We can help - we install your products! We also access steep and tall and repair those common home problems.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="deck">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Custom Decks</h5>
-              <img style="height:250px;"  src="assets/gallery/custom-deck2.jpg" class="card-img-top" alt="Deck builds by BRM">
-              <div class="card-body">
-              <p class="card-text">Enjoy your new outdoor space with a new deck by BRM. We offer full service deck builds, fence installation, posts, handrails and more. We repair and install anything wood.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="window">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Windows and doors</h5>
-              <img style="height:250px;"  src="assets/gallery/windows.png" class="card-img-top" alt="Windows and doors by BRM">
-              <div class="card-body">
-              <p class="card-text">Leaking or drafty windows or doors, We repair and install all sorts of exterior items including windows, doors, mailboxes, wood trim and complete resealing.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="installation">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Installations</h5>
-              <img style="height:250px;"  src="assets/gallery/carport.png" class="card-img-top" alt="Installation services by BRM">
-              <div class="card-body">
-              <p class="card-text">Have a product and just need it installed or assemblied, maybe even hung on a wall? We can help. BRM installs shelves, desks, applicances, tvs and more. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="roofing">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Roofing and Siding</h5>
-              <img style="height:250px;"  src="assets/gallery/roof.png" class="card-img-top" alt="Installation services by BRM">
-              <div class="card-body">
-              <p class="card-text">BRM offers repairs and maintenance for most common roof and siding projects. We can extened the life with maintenance or simply install new.</p>
-            </div>
-          </div>
-        </div>
-      </div>      
-
-        <!-- card  -->
-        <div class="col-lg-6 col-md-6" id="drywall">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Drywall</h5>
-              <img style="height:250px;"  src="assets/gallery/drywall-finish.jpg" class="card-img-top" alt="Drywall repairs">
-              <div class="card-body">
-              <p class="card-text">BRM offers complete drywall services. Drywall installation and finishing options available. We repair those pesky stains and offer painting.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-              
+            <li class="listing-card">
+                <img class="img-fluid" style="height: 200px;" src="assets/gallery/recycle.jpg" alt="20 yard small dumpster" style="width:100%">
+                <h2>Recycling</h2>
+                <div class="body">
+                    <p>This size is great for garage and yard clean-ups. Great choice for basement renovations. Also can hold 17-20 sqare of roofing.</p>
+                </div>
+                <div class="cta">
+                    <a class="btn btn-solid" href="recycling.html">Recycling Services</a>
+                </div>
+            </li>
+            
+            <li class="listing-card">
+                <img class="img-fluid" style="height: 200px;" src="assets/gallery/enviromental.jpg" alt="30 yard small dumpster" style="width:100%">
+                <h2>Enviromental</h2>
+                <div class="body">
+                    <p>This size dumpster is a great choice for large roofs plus wood 30+ square. Whole house renovations and mobile home demolition.</p>
+                </div>
+                <div class="cta">
+                    <a class="btn btn-solid" href="enviromental.html">Enviromental Service</a>
+                </div>
+            </li>
+      
+            <h3>Other Money-Saving Dumpster Uses Include:</h3>
+            <div class="body">
+                <ul>
+                    <li class="list">House Demolition</li>
+                    <li class="list">Brush and Stumps</li>
+                    <li class="list">Masonary and Concrete</li>
+                    <li class="list">Cardbord and more!</li>
+                </ul>
+                <p>On receipt of filled container, any tonnage above specified weight limit will be charged an extra per-ton fee.</p>
+            </div>          
+      </div>           
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="sidebar-img text-center">
+        <img src="assets/gallery/30yd-multi-no-bg.png" class="img-fluid shadow-lg" style="width:100%;" alt="Salandro's Office">
     </div>
   </div>
   </section>
   <!-- ======= SERVICES END/ ============= -->
-  <!-- ============ SIDEBAR ============== -->
-  <div class="sidebar" id="#about" style="width: 90%;">
-    <div class="sidebar-card ">
-      <div class="sidebar-img text-center">
-        <img src="assets/gallery/Office_small.jpg" class="" alt="Salandro's Office">
-      </div>
-      <div class="sidebar-info py-3">
-        <p>In 1979 Salandro's Refuse, Inc. was established in Jeannette Pennsylvania with only a '68 Chevy pickup truck and friendly, reliable garbage service.  From there the fleet quickly expanded and Salandro's bought their first rear load garbage truck in 1980, it was a '71 International.  Salandro's continued to provide reliable residential curbside pickup and added Roll-off service in 1991.  In 1995 residential pick-up was stopped to better focus on roll-off services.  Today Salandro's operates a fleet of 6 roll-off trucks out of Crabtree, PA and provides services to Westmoreland and surrounding counties.</p>
-      </div>
-      <div class="sidebar-title">
-        <h2 class="">Call today  
-          <br><span>(724) 668-2020</span> 
-          <br>Lets Connect</h2>
-      </div>
+
+    <!-- ============ SIDEBAR ============== -->
+    <div class="sidebar" id="#about">
+      <!-- <div class="sidebar-card ">
+        <div class="sidebar-content mx-auto d-block col-md-8">
+          <div class="sidebar-img text-center">
+            <img src="assets/gallery/Office_small.jpg" class="img-fluid shadow-lg" style="width:80%;" alt="Salandro's Office">
+          </div>
+          <div class="sidebar-info">
+            <p class="px-3 text-elite">In 1979 Salandro's Refuse, Inc. was established in Jeannette Pennsylvania with only a '68 Chevy pickup truck and friendly, reliable garbage service.  From there the fleet quickly expanded and Salandro's bought their first rear load garbage truck in 1980, it was a '71 International.  Salandro's continued to provide reliable residential curbside pickup and added Roll-off service in 1991.  In 1995 residential pick-up was stopped to better focus on roll-off services.  Today Salandro's operates a fleet of 6 roll-off trucks out of Crabtree, PA and provides services to Westmoreland and surrounding counties.</p>
+          </div>
+        </div>
+  
+      </div> -->
     </div>
-  </div>
-  <!-- ========= SIDEBAR END/============= -->
+    <!-- ========= SIDEBAR END/============= -->
+
+    <!-- ============ ASIDE  =============== -->
+    <aside class="aside">
+    <div class="aside-content">
+      <div class="title">
+        <h3>Salandro's proudly serves the following areas:</h3>
+      </div>
+      <div class="list  px-3">
+        <ul>
+          <li>Westmoreland County</li>
+          <li>Indiana County*</li>
+          <li>Allegheny County*</li>
+          <li>Indiana County*</li>
+          <li>Greensburg</li>
+          <li>Latrobe</li>
+          <li>Youngstown</li>
+          <li>Whitney</li>
+          <li>Derry</li>
+          <li>Loyalhanna</li>
+          <li>Saltsburg</li>
+          <li>New Alexandria</li>
+          <li>Delmont</li>
+          <li>Slickville</li>
+          <li>Murrysville</li>
+          <li>Monroeville</li>
+          <li>Apollo</li>
+          <li>New Kensington</li>
+          <li>Leechburg</li>
+          <li>Plum</li>
+          <li>Penn Hills</li>
+          <li>Trafford</li>
+          <li>Irwin</li>
+          <li>Manor</li>
+          <li>Penn</li>
+          <li>Westmoreland City</li>
+          <li>Harrison City</li>
+          <li>Jeannette</li>
+          <li>Blairsville</li>
+          <li>White Oak</li>
+          <li>North Versailles</li>
+          <li>McKeesport</li>
+          <li>Wilmerding</li>
+          <li>Youngwood</li>
+          <li>New Stanton</li>
+          <li>Mt. Pleasant</li>
+          <li>And Many More</li>
+        </ul>
+      </div>
+    </div> 
+    </aside>
+    <!-- ========= ASIDE END/ ============== -->
 </div>
 <!-- ========== WRAPPER END/=========== -->
 
@@ -296,7 +278,7 @@
             </p>
             <div class="social-links d-flex mt-3">
               <a href="http://www.salandros.com" class="d-flex align-items-center justify-content-center"><img src="assets/logo/salandro.ico" alt="Salandro"></img></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><img src="assets/logo/salandro.ico" alt="Salandro"></img></a>
+              <a href="https://www.facebook.com/profile.php?id=100057048536642&sk=photos" class="d-flex align-items-center justify-content-center"><img src="assets/logo/facebook.jfif" alt="Salandro"></img></a>
             </div>
           </div>
         </div>
@@ -304,7 +286,7 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Sitemap</h4>
           <ul>
-            <li><a href="#top">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Connect with Us</a></li>
