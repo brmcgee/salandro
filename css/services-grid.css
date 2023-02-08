@@ -8,6 +8,7 @@
     width: 100%;
     height: 100%;
     margin: 0px;
+    background-color: rgb(218, 216, 216);
     /* background-color: rgba(199, 193, 16, 0.7); */
 }
 .sidebar {
@@ -26,6 +27,14 @@
 .footer {
     grid-area: -footer;
     margin-top: 4px;
+}
+.listing-card {
+    border: none;
+    margin-bottom: 30px;
+}
+.listing-card .cta {
+    background-color: var(--bg-light);
+    border: none;
 }
 
 @media (min-width: 250px){
