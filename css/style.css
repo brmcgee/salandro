@@ -1111,6 +1111,7 @@ ol, ul {
 .main .main-img {
     margin-top: 15px;
     box-shadow: 3px 3px 10px #333;
+    border: none;
 }
  /* ======== MAIN END/ ========= */
   
@@ -1388,14 +1389,12 @@ ol, ul {
 /* ====== MAINTENANCE END/ ============= */
 
 /* ========= ENVIROMENTAL =============== */
-
+/* enviro recycle compactor  */
 .enviromental .container .heading h1 {
     color: var(--bg-primary);
     border-bottom: 2px solid var(--bg-icon);
 }
-.enviromental .container .title h4 {
-    
-}
+
 .enviromental .container .content ul {
     padding-left: 28px;
 }
@@ -1404,7 +1403,7 @@ ol, ul {
 }
 
 .enviromental .container .content-image img {
-    border-radius: 25px;
+    border-radius: 10px;
     border: 5px solid transparent;
 }
 
