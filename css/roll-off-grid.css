@@ -20,6 +20,7 @@
     grid-area: -aside;
     height: 100%;
     width: 100%;
+    margin-top: 0px;
     /* background-color: rgba(199, 193, 16, 0.7); */
 }
 .footer {
