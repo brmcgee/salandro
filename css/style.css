@@ -917,6 +917,7 @@ input {
     border-top: 30px solid var(--bg-primary);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    box-shadow: 4px 4px 12px #333;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1162,6 +1163,11 @@ ol, ul {
     left: 0;
     z-index: 18;
 }
+.sidebar {
+    border: 2px solid #878787;
+    border-bottom:1px solid #0e2608;
+    box-shadow: 3px 3px 18px rgba(14, 33, 6, 0.7);
+}
 .sidebar .sidebar-card .sidebar-info p {
     color: #0a0a0a;
     font-weight: 700;
@@ -1176,7 +1182,10 @@ ol, ul {
     border: none;
 }
 .sidebar .sidebar-card  .sidebar-img img {
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 2px solid #898989;
+    border-bottom:1px solid #0e2608;
+    box-shadow: 3px 3px 18px rgba(14, 33, 6, 0.7);
 }
  /* ======== SIDEBAR END/ ========= */
 

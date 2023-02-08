@@ -47,6 +47,7 @@
             "-services"
             "-aside"
             "-sidebar"
+            "-ad "
             "-footer";
     }
     .aside {
@@ -68,10 +69,10 @@
         grid-template-columns:  1.2fr 4fr;
         gap: 10px;
         grid-template-areas: 
-            "-masthead   -masthead"
-            "-aside         -services"
-            "-aside        -sidebar"
-            "-footer       -footer";
+        "-masthead   -masthead"
+        "-aside         -services"
+        "-aside        -sidebar"
+        "-footer       -footer";
     }
     .wrapper {
         max-width: 1400px;

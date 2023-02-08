@@ -67,9 +67,9 @@
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     .wrapper {
-        grid-template-columns:  1fr 4fr;
+        grid-template-columns:  .8fr 8fr;
         gap: 10px;
         grid-template-areas: 
             "-masthead   -masthead"
@@ -79,11 +79,11 @@
             "-footer       -footer";
     }
     .wrapper {
-        max-width: 80%;
+        max-width: 98%;
         margin: auto;
     }
     .aside {
-        width: 100%;
+        width: 96%;
         margin: 25px auto auto auto;
         padding: 2px;
         background-color: var(--bg-light);
@@ -118,7 +118,7 @@
 
 @media (min-width: 1300px) {
     .wrapper {
-        width: 100%;
+        width: 90%;
         margin: auto;
     }
 }
