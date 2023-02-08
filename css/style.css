@@ -1476,6 +1476,37 @@ ol, ul {
 
 
 
+.webdesign {
+    font-family: 'Special Elite', arial;
+}
+.webdesign a {
+    color: rgb(27, 139, 30);
+    text-decoration: none;
+    float: right;
+    font-size: 11px;
+    transition: .2s;
+    padding: 3px;
+}
+.webdesign a:hover {
+    color: rgb(181, 15, 199);
+    text-decoration: none;
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    rotate: -2deg;
+}
+.webdesign a:active {
+    rotate: 3deg;
+    zoom: 1.1;
+    color: rgb(15, 36, 199);
+    background-color: rgb(147, 219, 39);
+    border: 2px solid #333;
+}
+
+
+
+
 
 
 
