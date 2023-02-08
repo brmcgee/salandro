@@ -526,7 +526,7 @@ input {
 .masthead {
     color: #fff;
     height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center right;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center;
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 30px 0;
@@ -535,13 +535,13 @@ input {
 /* dimmer  */
 .masthead:before {
     content: "";
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     inset: 0;
 }
 .masthead .masthead-container .block-text {
     width: 100%;
-    height: 68px;
+    height: 58px;
     background-color: var(--bg-primary);
     position: absolute;
     top: 62vh;
@@ -561,11 +561,11 @@ input {
     left: 0px;
     right: 0px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 50px 10px 80px 10px;
+    padding: 0px 12px;
 }
 .masthead .masthead-container h1 {
     margin: 0px 0px 10px 0px;
@@ -863,6 +863,10 @@ input {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     transition: 0.3s;
+}
+.services .content-heading h2 {
+    color: var(--bg-primary);
+    border-bottom: 2px solid var(--bg-icon);
 }
 .services .section-header p {
     line-height: 24px;
