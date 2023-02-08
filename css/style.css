@@ -909,23 +909,27 @@ input {
     margin: 2em;
     display: grid;
     gap: 12px;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     
 }
 .listing-card {
-    border: 2px solid var(--bg-color-dark);
+    border: 1px solid #333;
     border-top: 30px solid var(--bg-primary);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    box-shadow: 4px 4px 12px #333;
+    box-shadow: 6px 6px 21px 2px #737373;
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #fff;
+    font-weight: 500;
 }
 .listing-card img {
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
+}
+.listing-card h2 {
+    font-weight: 700;
 }
 
 .listing .cta {
@@ -953,6 +957,7 @@ input {
 }
 .card-span{
     background-color: var(--bg-icon);
+    border: 1px solid #333;
     border-radius: 8px;
     color: #333;
     font-size: 18px;
