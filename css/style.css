@@ -846,7 +846,7 @@ input {
     background-color: #fff;
 }
 .services .row .card .card-body {
-    padding: 2px 0 1px 0;; 
+    padding: 10px 0 0px 0;; 
 }
 .services .section-header h2 {
     color: var(--bg-primary);
@@ -891,31 +891,33 @@ input {
 
 .services .row div .card .card-body p  {
     color: #000000;
-    font-family: 'Montserrat', sans-serif;
     padding-bottom:.5px;
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 17px;
     display: inline-block;
     transition: 0.3s;
 }
-.services .row div .card .card-body img {
-    border-radius: 5px;
-    border: 1px solid rgb(161, 161, 161);
-    box-shadow: 2px 3px 6px 2px rgb(197, 197, 197);
-}
+
 .listing {
     list-style: none;
     margin: 2em;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     
 }
 .listing-card {
     border: 2px solid var(--bg-color-dark);
+    border-top: 30px solid var(--bg-primary);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.listing-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .listing .cta {
@@ -945,10 +947,13 @@ input {
     background-color: var(--bg-icon);
     border-radius: 8px;
     color: #333;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     padding: 8px;
     margin-left: 10px;
+}
+.cta a:hover {
+    color: #b8b8b8;
 }
 ol, ul {
     padding-left: 1px;
