@@ -45,6 +45,9 @@
     /* border: 1px solid rgb(31, 29, 29); */
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
 }
+.services {
+    background-color: transparent ;
+}
 .masthead {
     margin-bottom: 15px;
 }
@@ -129,6 +132,9 @@ input {
 }
 .bg-white {
     color: #f7f5f5;
+}
+.text-icon {
+    color: var(--bg-icon);
 }
 
 /* ==========  FONTS ========== */
@@ -559,7 +565,7 @@ input {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0px 12px;
+    padding: 50px 10px 80px 10px;
 }
 .masthead .masthead-container h1 {
     margin: 0px 0px 10px 0px;
@@ -841,10 +847,6 @@ input {
 
 /* ======== SERVICES ======== */ 
 
-.services {
-    font-family: var(--font-primary);
-    background-color: #fff;
-}
 .services .row .card .card-body {
     padding: 10px 0 0px 0;; 
 }
@@ -914,10 +916,11 @@ input {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #fff;
 }
 .listing-card img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
 }
 
 .listing .cta {
@@ -1381,20 +1384,45 @@ ol, ul {
 /* ====== MAINTENANCE END/ ============= */
 
 /* ========= ENVIROMENTAL =============== */
+
 .enviromental .container .heading h1 {
     color: var(--bg-primary);
     border-bottom: 2px solid var(--bg-icon);
 }
 .enviromental .container .title h4 {
-    text-indent: .5cm;
+    
 }
 .enviromental .container .content ul {
-    padding-left: 38px;
+    padding-left: 28px;
 }
 .enviromental .container .content ul li {
     padding: 5px;
 }
+
+.enviromental .container .content-image img {
+    border-radius: 25px;
+    border: 5px solid transparent;
+}
+
+@media (max-width: 700px) {
+    .enviromental .container .content .content-image {
+        display: block;
+    }
+}
+@media (min-width: 701px) {
+    .enviromental .container .content .content-image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+    }
+}
+
 /* ====== ENVIROMENTAL END/ ============= */
+
+/* ========== ALBUM  ==================== */
+
+/* ========= ALBUM END/ ================= */
 
 /* =========== MODAL ============= */
 .modal .modal-content {
