@@ -67,10 +67,10 @@
 }
 
 
-@media (min-width: 750px) {
+@media (min-width: 640px) {
     .wrapper {
-        grid-template-columns:  .8fr 8fr;
-        gap: 10px;
+        grid-template-columns:  1fr 8fr;
+        gap: 5px;
         grid-template-areas: 
             "-masthead   -masthead"
             "-aside         -main"
