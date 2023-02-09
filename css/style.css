@@ -918,10 +918,11 @@ input {
     }
 }
 .listing-card {
-    border: 2px solid #333;
-    border-top: 20px solid #333;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border: 1px solid #6c6c6c;
+    /* border-top: 20px solid #333; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-radius: 5px;
     box-shadow: 6px 6px 21px 2px #878787;
     display: flex;
     flex-direction: column;
@@ -930,8 +931,8 @@ input {
     font-weight: 500;
 }
 .listing-card img {
-    border-top-left-radius: 1px;
-    border-top-right-radius: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .listing-card h2 {
     font-weight: 700;
@@ -1266,15 +1267,14 @@ ol, ul {
 /* ============ AD END/ ========= */
 
 
-
 /* =========== ABOUT ============= */ 
-.about {
+/* .about {
     background-color: #9d950b;
 }
 .about-card {
     background-color: #c5c5c5;
     width: 60vw;
-}
+} */
 /* ========= ABOUT END/ ========== */
 
 
