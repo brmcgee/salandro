@@ -46,7 +46,7 @@
     box-shadow: 4px 8px 20px 1px rgb(39, 38, 38);
 }
 .services {
-    background-color: transparent ;
+    background-color: var(--bg-mack) ;
 }
 .masthead {
     margin-bottom: 15px;
@@ -958,6 +958,17 @@ input {
 .listing .body {
     padding: 12px;
 }
+.text-box h3 {
+    color: var(--bg-primary);
+    font-size: 24px;
+    font-style: italic;
+    text-indent: .5cm;
+    margin-bottom: 45px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 600;
+}
+
 .listing .body p {
     text-indent: .5cm;
 }
@@ -1461,11 +1472,10 @@ ol, ul {
     font-family: "Roboto", Sans-serif;
     margin: 0 0 1px 5px;
     padding-bottom: 0px;
-    font-size: 20px;
+    font-size: 22px;
     display: inline-block;
     text-transform: uppercase;
     color: #fff;
-    border-bottom: 3px solid var(--bg-primary-contrast);
     transition: 0.3s;
  }
  .modal-content .modal-header button {
@@ -1478,12 +1488,12 @@ ol, ul {
     margin: 0 0 6px 0;
     padding-bottom: 2px;
     border-bottom: 1px solid rgb(192, 192, 192);
-    font-size: 19px;
+    font-size: 20px;
  }
 .modal-content .modal-body .schedule-message a {
     font-family: "Roboto", Sans-serif;
     padding-bottom: 8px 16px 2px 16px;
-    font-size: 17px;
+    font-size: 19px;
     color: white;
  }
 .modal-content .modal-footer button {
